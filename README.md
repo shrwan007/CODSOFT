@@ -1,3 +1,6 @@
 # CODSOFT Python Task
-<br>
-python codsoft task 
+
+python codsoft tasks
+1. To-do-list(task 1)
+2. ..
+3. ..
