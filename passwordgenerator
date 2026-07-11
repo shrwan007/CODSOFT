@@ -1,0 +1,33 @@
+import string
+import secrets
+
+def generate_password(length):
+
+    alphabet = string.ascii_letters + string.digits + string.punctuation
+
+    password = ''.join(secrets.choice(alphabet) for _ in range(length))
+
+    return password
+
+def main():
+    print("=== Secure Password Generator ===")
+
+    try:
+        user_input = input("Enter the desired length of your password: ")
+        length = int(user_input)
+
+        if length <= 0:
+            print("Error: Password length must be at least 1.")
+            return
+
+    except ValueError:
+        print("Error: Please enter a valid whole number.")
+        return
+
+    secure_password = generate_password(length)
+
+    print("\nGenerated Password:")
+    print(secure_password)
+
+if __name__ == "__main__":
+    main()
