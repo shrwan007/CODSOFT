@@ -2,5 +2,5 @@
 
 python codsoft tasks
 1. To-do-list(task 1)
-2. ..
+2. Password Generator (Task 3)
 3. ..
